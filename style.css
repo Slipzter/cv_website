@@ -7,19 +7,18 @@
     font-family: Maven Pro, sans-serif;
 }
 
+body {
+    background-color: #090F0F;
+}
+
 :root {
     --passive-box-shadow: inset 0px 0px 10px 0px #5F8DA7;
-    --active-box-shadow:  inset 0px 1.5px 10px 10px #5F8DA7;
+    --active-box-shadow:  inset 0px 3px 10px 7px #5F8DA7;
     --inset-image-shadow: inset 5px -10px 40px 40px red/* #090F0F */;
 }
 
 #desktop-social-media {
     display: none;
-}
-
-#main-aside {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .page-text {
@@ -34,6 +33,7 @@
 header {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -106,15 +106,19 @@ input:checked ~ #active {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 #menu-content a {
     color: black;
+    margin-left: 5vw;
     z-index: 10;
     background-color: inherit;
     text-decoration: none;
     font-size: 2em;
+    width: fit-content;
 }
+
 
 /* SOCIAL MEDIA */
 
@@ -146,17 +150,23 @@ input:checked ~ #active {
 
 #a-contact-button {
     background-color: black;
-    font-size: 2.1em;
-    padding: 1% 2% 0 2%;
+    font-size: 2em;
+    padding: 5px 15px 5px 10px;
     box-shadow: var(--active-box-shadow);
+    overflow: hidden;
 }
 
-#a-contact-button a {
+#a-contact-button i {
     color: whitesmoke;
 }
 
 
 /* MAIN & ASIDE */
+
+#main-aside {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 main, aside {
     padding: 10vh 5vw;
@@ -168,55 +178,98 @@ h1 {
 }
 
 h2 {
-    color: #9DCAE3;
+    color: #5F8DA7;
 }
 
 .image-container {
     width: 200px;
-    content: '';
-    box-shadow: var(--inset-image-shadow);
+    z-index: 10;
     margin: 10px;
-    z-index: 1;
 }
 
 #main-image {
     width: 200px;
     z-index: 0;
+    position: relative;
 }
 
-/* CONTACT FORM */
+#education-h2 {
+    color: #5F8DA7;
+}
+
+h2 > i {
+    color: #5F8DA7;
+}
+
+.page-text > a {
+    color: #9DCAE3;
+}
+
+#education-aside {
+    visibility: hidden;
+}
+
+
+/* CONTACT PAGE & FORM */
+
+#contact-main {
+    padding: 10vh 5vw;
+    height: 90vh;
+    min-width: 250px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    justify-content: flex-start;
+}
+
+#contact-main > h1 {
+    position: absolute;
+}
 
 .contact-form {
     color: white;
-    margin-top: 20%;
-    height: 70%;
+    margin-top: 10vh;
+    height: 100vh;
 }
 
 #f-name, #l-name {
-    margin-bottom: 10%;
+    margin: 2vh 0;
     border-radius: 4px;
-    height: 4%;
+    height: 20px;
     width: 70%;
+    max-width: 150px;
 }
 
 #t-area {
-    height: 30%;
-    width: 70%;
-    margin: 10% 0;
+    height: 100px;
+    width: 80%;
+    margin: 5vh 0;
+    max-width: 420px;
 }
 
 #send-button {
-    height: 8%;
-    width: 25%;
+    height: 30px;
+    width: 60px;
     background-color: #9DCAE3;
     border-radius: 4px;
     font-family: Maven Pro;
     font-size: 1.1em;
 }
 
+
+/* CHECKOUT */
+
+.checkout-link {
+    color: #5F8DA7;
+}
+
 .checkout-link a {
     text-decoration: none;
+    color: #9DCAE3;
     border-bottom: 2px solid #9DCAE3;
+}
+
+.checkout-link i {
+    color: #9DCAE3;
 }
 
 /* FOOTER */
@@ -233,16 +286,20 @@ footer {
 }
 
 footer address {
-    color: black;
     font-style: normal;
 }
 
 footer a {
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: 70%;
     text-decoration: none;
     border-bottom: 2px solid black;
+}
+
+.address-text {
+    font-size: 0.9em;
+    color: black;
+    margin: 5px 0;
 }
 
 

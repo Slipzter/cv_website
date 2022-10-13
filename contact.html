@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
     
-    <title>CV Hemsida</title>
+    <title>CV hemsida</title>
 </head>
 
 
@@ -28,6 +28,8 @@
                 </label>
 
                 <div id="menu-content">
+                    <a href="index.html" id="home">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>home</a>
                     <a href="myskills.html" id="myskills">
                         <i class="fa fa-check-square fa-fw" aria-hidden="true"></i>my skills</a>
                     <a href="education.html" id="education">
@@ -48,45 +50,31 @@
                     </a>
                 </div>
 
-                <div id="contact-button">
+                <div id="a-contact-button">
                     <a href="contact.html">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </a>
                 </div>
             </nav>
         </header>
-        <div id="main-aside">
-            <main>
-                <h1>Tim Hansson Meng</h1>
-                <h2>software developer</h2>
-                <div class="image-container">
-                    <img src="img1.jpg" id="main-image" alt="image">
-                </div>
-                <p class="main-text page-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quod ullam quidem pariatur earum debitis neque laborum incidunt error.
-                </p>
-            </main>
-            
-            <aside>
-                
-                <h1>about me</h1>
-                <p class="page-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat laborum labore nostrum? Ipsum nesciunt illo sunt, voluptatibus fuga laborum quas enim exercitationem praesentium iusto, autem iste reiciendis architecto adipisci molestiae aperiam! Nisi reprehenderit omnis porro earum aperiam fugit sunt sint nostrum quae exercitationem blanditiis id modi optio eos, nihil obcaecati assumenda neque quaerat, sit debitis architecto reiciendis, praesentium explicabo error? Voluptatem sed eligendi necessitatibus eos reiciendis! Unde, esse accusamus!
-                </p>
-                <nav id="desktop-social-media">
-                    <a href="https://www.linkedin.com/in/tim-hansson-meng-b9087b118/n" target="_blank">
-                        <i class="fa fa-linkedin-square"></i>
-                    </a>
-                    <a href="https://www.dropbox.com/sh/oyakh9n3m4kigw7/AABtYPlT5nbKABbafbhMOB0Ba?dl=0" target="_blank">
-                        <i class="fa fa-dropbox"></i>
-                    </a>
-                    <a href="https://github.com/ChasAcademy-Tim-HanssonMeng?tab=repositories" target="_blank">
-                        <i class="fa fa-github-square"></i>
-                    </a>
-                </nav>
-                
-            </aside>
-        </div>
+
+        <main id="contact-main">
+            <h1>contact me</h1>
+
+            <form class="contact-form">
+
+                <input type="text" name="firstname" id="f-name" placeholder="First name...">
+    
+                <input type="text" name="lastname" id="l-name" placeholder="Last name...">
+    
+                <textarea id="t-area" name="message" placeholder="Write your message here..."></textarea>
+                <br>
+                <input type="submit" value="Send" id="send-button">
+    
+            </form>
+
+        </main>
+
         <footer>
             <address class="address-text">
                 <a href="mailto:tim.hanssonmeng@chasacademy.se" class="address-text">tim.hanssonmeng@chasacademy.se</a></address>
