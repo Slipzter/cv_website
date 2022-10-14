@@ -14,7 +14,7 @@ body {
 :root {
     --passive-box-shadow: inset 0px 0px 10px 0px #5F8DA7;
     --active-box-shadow:  inset 0px 3px 10px 7px #5F8DA7;
-    --inset-image-shadow: inset 5px -10px 40px 40px red/* #090F0F */;
+    --inset-image-shadow: inset 5px -10px 30px 20px #090F0F;
 }
 
 #desktop-social-media {
@@ -171,6 +171,11 @@ input:checked ~ #active {
 main, aside {
     padding: 10vh 5vw;
     background-color: #090F0F;
+    height: 70vh;
+}
+
+main {
+    z-index: 0;
 }
 
 h1 {
@@ -183,13 +188,14 @@ h2 {
 
 .image-container {
     width: 200px;
-    z-index: 10;
     margin: 10px;
+    box-shadow: var(--inset-image-shadow);
+    z-index: initial;
 }
 
 #main-image {
     width: 200px;
-    z-index: 0;
+    z-index: -1;
     position: relative;
 }
 
@@ -209,6 +215,12 @@ h2 > i {
     visibility: hidden;
 }
 
+.portfolio-link {
+    text-decoration: none;
+    color: #9DCAE3;
+    border-bottom: 2px solid #9DCAE3;
+}
+
 
 /* CONTACT PAGE & FORM */
 
@@ -216,9 +228,6 @@ h2 > i {
     padding: 10vh 5vw;
     height: 90vh;
     min-width: 250px;
-    display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
-    justify-content: flex-start;
 }
 
 #contact-main > h1 {
@@ -227,23 +236,24 @@ h2 > i {
 
 .contact-form {
     color: white;
-    margin-top: 10vh;
+    margin: 10vh 0 0 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #f-name, #l-name {
     margin: 2vh 0;
-    border-radius: 4px;
+    border-radius: 2px;
     height: 20px;
-    width: 70%;
-    max-width: 150px;
+    width: 180px;
 }
 
 #t-area {
     height: 100px;
-    width: 80%;
+    width: 180px;
     margin: 5vh 0;
-    max-width: 420px;
+    border-radius: 2px;
 }
 
 #send-button {
@@ -253,6 +263,7 @@ h2 > i {
     border-radius: 4px;
     font-family: Maven Pro;
     font-size: 1.1em;
+    margin: 0;
 }
 
 
@@ -309,4 +320,12 @@ footer a {
     main, aside {
         height: 100vh;
     }
+}
+
+
+
+@media (min-width: 900px) {
+
+    
+
 }
