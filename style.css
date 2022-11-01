@@ -13,7 +13,7 @@ body {
 
 :root {
     --passive-box-shadow: inset 0px 0px 10px 0px #5F8DA7;
-    --active-box-shadow:  inset 0px 3px 10px 7px #5F8DA7;
+    --active-box-shadow: inset 0px 3px 10px 7px #5F8DA7;
     --inset-image-shadow: inset 5px -10px 30px 20px #090F0F;
 }
 
@@ -43,7 +43,7 @@ nav {
     background-color: #5F8DA7;
     display: flex;
     align-items: center;
-    
+
 }
 
 
@@ -65,11 +65,11 @@ nav {
     overflow: hidden;
 }
 
-input:not(:checked) ~ #menu-content {
+input:not(:checked)~#menu-content {
     transform: scaleY(0);
 }
 
-input:checked ~ #menu-label i {
+input:checked~#menu-label i {
     visibility: hidden;
 }
 
@@ -81,12 +81,14 @@ input:checked ~ #menu-label i {
     font-size: 2.5em;
     color: black;
     z-index: -1;
-    
+
 }
 
-input:checked ~ #active {
+input:checked~#active {
     z-index: 1;
 }
+
+
 
 
 
@@ -106,7 +108,7 @@ input:checked ~ #active {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
 #menu-content a {
@@ -118,6 +120,28 @@ input:checked ~ #active {
     font-size: 2em;
     width: fit-content;
 }
+
+#menu-content #a-home,
+#a-home i {
+    color: #9DCAE3;
+}
+
+#menu-content #a-myskills,
+#a-myskills i {
+    color: #9DCAE3;
+}
+
+#menu-content #a-education,
+#a-education i {
+    color: #9DCAE3;
+}
+
+#menu-content #a-portfolio,
+#a-portfolio i {
+    color: #9DCAE3;
+}
+
+
 
 
 /* SOCIAL MEDIA */
@@ -168,7 +192,8 @@ input:checked ~ #active {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-main, aside {
+main,
+aside {
     padding: 10vh 5vw;
     background-color: #090F0F;
     height: 70vh;
@@ -203,11 +228,11 @@ h2 {
     color: #5F8DA7;
 }
 
-h2 > i {
+h2>i {
     color: #5F8DA7;
 }
 
-.page-text > a {
+.page-text>a {
     color: #9DCAE3;
 }
 
@@ -234,7 +259,7 @@ h2 > i {
     min-width: 250px;
 }
 
-#contact-main > h1 {
+#contact-main>h1 {
     position: absolute;
 }
 
@@ -246,7 +271,8 @@ h2 > i {
     flex-direction: column;
 }
 
-#f-name, #l-name {
+#f-name,
+#l-name {
     margin: 2vh 0;
     border-radius: 2px;
     height: 20px;
@@ -322,7 +348,8 @@ footer a {
 
 @media (min-width: 500px) {
 
-    main, aside {
+    main,
+    aside {
         height: 100vh;
     }
 
