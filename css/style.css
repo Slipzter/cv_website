@@ -166,6 +166,7 @@ input:checked~#active {
     padding: 5px 15px 5px 10px;
     box-shadow: var(--passive-box-shadow);
     overflow: hidden;
+    border: none;
 }
 
 #contact-button a {
@@ -264,7 +265,6 @@ h2>i {
 .contact-form {
     color: white;
     margin: 10vh 0 0 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -292,6 +292,39 @@ h2>i {
     font-family: Maven Pro;
     font-size: 1.1em;
     margin: 0;
+}
+
+
+/* CONTACT MODAL POPUP */
+
+.modal {
+    z-index: 1;
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    right: 20vw;
+    background-color: #5F8DA7;
+    border-radius: 2px;
+}
+
+.modal-content {}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 

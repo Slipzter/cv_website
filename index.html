@@ -49,13 +49,25 @@
                         <i class="fa fa-github-square"></i>
                     </a>
                 </div>
-
-                <div id="contact-button">
-                    <a href="contact.html">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
+                <button id="contact-button">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </button>
+                <div id="myModal" class="modal hidden">
+                    <div class="modal-content">
+                        <h1>contact me</h1>
+                        <button class="close"><i class="fa fa-times"></i></button>
+                        <form class="contact-form">
+                            <input type="text" name="firstname" id="f-name" placeholder="First name...">
+                            <input type="text" name="lastname" id="l-name" placeholder="Last name...">
+                            <textarea id="t-area" name="message" placeholder="Write your message here..."></textarea>
+                            <br>
+                            <input type="submit" value="Send" id="send-button">
+                        </form>
+                    </div>
                 </div>
+
             </nav>
+            <div class="overlay hidden"></div>
         </header>
         <div id="main-aside">
             <main>
@@ -104,6 +116,7 @@
             </address>
         </footer>
     </div>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
