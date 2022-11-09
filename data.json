@@ -7,10 +7,16 @@
             "location": "Stavanger, Norway"
         },
         {
-            "workplace": "Private Fitness Coach",
+            "workplace": "My Website",
             "title": "Personal Trainer",
             "years": "2021 - present",
             "location": "Online"
+        },
+        {
+            "workplace": "Stavanger Musicians Bar",
+            "title": "Manager / Bartender",
+            "years": "2018 - 2022",
+            "location": "Stavanger, Norway"
         }
     ],
     "educations": [
