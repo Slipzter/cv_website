@@ -224,8 +224,9 @@ h2 {
     position: relative;
 }
 
-#education-h2 {
+.education-h2 {
     color: #5F8DA7;
+    margin-top: 1.3em;
 }
 
 h2>i {
@@ -234,10 +235,6 @@ h2>i {
 
 .page-text>a {
     color: #9DCAE3;
-}
-
-#education-aside {
-    visibility: hidden;
 }
 
 .portfolio-link {
