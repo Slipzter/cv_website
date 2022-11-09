@@ -1,4 +1,4 @@
-let url = "data.json";
+let url = "json/data.json";
 
 async function getInformation() {
 
