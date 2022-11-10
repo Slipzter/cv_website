@@ -202,6 +202,7 @@ aside {
 
 main {
     z-index: 0;
+    margin-bottom: 5%;
 }
 
 h1 {
@@ -249,6 +250,20 @@ h2>i {
     width: 150px;
 }
 
+.coding-page {
+    margin: 20% 0;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.coding-page i {
+    font-size: 4em;
+    color: #9DCAE3;
+    padding: 10% 0;
+}
+
 
 /* CONTACT PAGE & FORM */
 
@@ -271,15 +286,15 @@ h2>i {
 
 #f-name,
 #l-name {
-    margin: 2vh 0;
+    margin: 1.5vh 0;
     border-radius: 2px;
     height: 20px;
-    width: 180px;
+    width: 90%;
 }
 
 #t-area {
     height: 100px;
-    width: 180px;
+    width: 90%;
     margin: 5vh 0;
     border-radius: 2px;
 }
@@ -292,6 +307,7 @@ h2>i {
     font-family: Maven Pro;
     font-size: 1.1em;
     margin: 0;
+    box-shadow: var(--passive-box-shadow);
 }
 
 
@@ -300,17 +316,28 @@ h2>i {
 .modal {
     z-index: 1;
     position: absolute;
+    border: solid 2px whitesmoke;
     top: 15vh;
     left: 20vw;
     right: 20vw;
+    height: 70vh;
     background-color: #5F8DA7;
     border-radius: 2px;
+    min-height: 400px;
+    display: flex;
 }
 
-.modal-content {}
+.modal-content {
+    height: 100%;
+    margin-top: 4%;
+}
 
 .overlay {
     position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
@@ -321,10 +348,13 @@ h2>i {
 }
 
 .close {
-    border: none;
     position: absolute;
     top: 0;
     right: 0;
+    margin: 3%;
+    border-radius: 2px;
+    background: #9DCAE3;
+    box-shadow: var(--passive-box-shadow);
 }
 
 

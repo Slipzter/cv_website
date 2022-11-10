@@ -7,6 +7,7 @@ const overlay = document.querySelector(".overlay");
 function openModal() {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
+
     console.log("opened modal");
 }
 

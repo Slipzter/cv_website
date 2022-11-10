@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>CV Hemsida</title>
 </head>
 
@@ -51,22 +51,34 @@
                 </div>
 
                 <div id="contact-button">
-                    <a href="contact.html">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
+                <div id="myModal" class="modal hidden">
+                    <div class="modal-content">
+                        <h1>contact me</h1>
+                        <button class="close"><i class="fa fa-times"></i></button>
+                        <form class="contact-form">
+                            <input type="text" name="firstname" id="f-name" placeholder="First name...">
+                            <input type="text" name="lastname" id="l-name" placeholder="Last name...">
+                            <textarea id="t-area" name="message" placeholder="Write your message here..."></textarea>
+                            <br>
+                            <input type="submit" value="Send" id="send-button">
+                        </form>
+                    </div>
+                </div>
+                <div class="overlay hidden"></div>
             </nav>
         </header>
         <div id="main-aside">
             <main>
                 <h1>my skills</h1>
-                <p class="page-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum deleniti repudiandae
-                    distinctio voluptas.</p>
-                <p class="page-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure assumenda itaque, voluptatum fugiat
-                    blanditiis nostrum architecto numquam nam. Et, veniam.</p>
-                <br>
+                <div class="coding-page">
+                    <i class="devicon-csharp-plain"></i>
+                    <i class="devicon-unity-original-wordmark"></i>.
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                </div>
                 <h2 class="checkout-link">Check out my <a
                         href="https://www.linkedin.com/in/tim-hansson-meng-b9087b118/n" target="_blank">Linked <i
                             class="fa fa-linkedin"></i></a></h2>
