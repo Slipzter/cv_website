@@ -73,7 +73,7 @@ input:checked~#menu-label i {
     visibility: hidden;
 }
 
-#active i {
+.active i {
     position: absolute;
     left: 0;
     top: 0;
@@ -84,7 +84,7 @@ input:checked~#menu-label i {
 
 }
 
-input:checked~#active {
+input:checked~.active {
     z-index: 1;
 }
 
