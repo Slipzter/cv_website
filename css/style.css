@@ -214,6 +214,11 @@ h2 {
     color: #5F8DA7;
 }
 
+h3 {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
 .image-container {
     width: 200px;
     margin: 10px;
